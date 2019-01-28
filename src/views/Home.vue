@@ -1,16 +1,16 @@
 <template>
   <div>
-      <AppTag text="Vue" dark />
+      <AppReveal text="Here I am" dark />
   </div>
 </template>
 
 <script>
-import AppTag from '@/components/elements/tag/AppTag'
+import AppReveal from '@/components/elements/reveal/AppReveal'
 
 export default {
   name: 'home',
   components: {
-      AppTag
+      AppReveal
   }
 }
 </script>
