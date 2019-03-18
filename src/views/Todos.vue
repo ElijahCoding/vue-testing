@@ -9,7 +9,7 @@
               class="todo"
             >
               {{ todo.title }}
-              <i class="fas fa-trash-alt"></i>
+              <i @click="deleteTodo(todo.id)" class="fas fa-trash-alt"></i>
             </div>
         </div>
     </div>
@@ -30,7 +30,7 @@
 
         methods: {
             ...mapActions([
-                'fetchTodos'
+                'fetchTodos', 'deleteTodo'
             ])
         },
 
