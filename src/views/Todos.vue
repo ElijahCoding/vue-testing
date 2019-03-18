@@ -9,6 +9,7 @@
               class="todo"
             >
               {{ todo.title }}
+              <i class="fas fa-trash-alt"></i>
             </div>
         </div>
     </div>

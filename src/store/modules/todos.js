@@ -21,8 +21,12 @@ const actions = {
             'https://jsonplaceholder.typicode.com/todos',
             { title, completed: false }
         )
-        
+
         commit('newTodo', response.data)
+    }
+
+    async deleteTodo({ commit }, id) {
+        
     }
 }
 
