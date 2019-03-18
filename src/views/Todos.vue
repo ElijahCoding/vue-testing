@@ -1,5 +1,7 @@
 <template>
-    <p>bhig</p>
+    <div class="container">
+        <p>bhig</p>
+    </div>
 </template>
 
 <script>
