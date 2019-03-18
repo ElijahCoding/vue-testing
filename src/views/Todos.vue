@@ -1,6 +1,7 @@
 <template>
     <div class="container">
         <AddTodo />
+        <FilterTodos />
         <h3>Todos</h3>
         <div class="todos">
             <div
@@ -17,11 +18,12 @@
 
 <script>
     import AddTodo from './AddTodo'
+    import FilterTodos from './FilterTodos'
     import { mapGetters, mapActions } from 'vuex'
 
     export default {
         components: {
-            AddTodo
+            AddTodo, FilterTodos
         },
 
         created () {
