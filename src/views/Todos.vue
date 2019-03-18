@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <AddTodo />
         <h3>Todos</h3>
         <div class="todos">
             <div
@@ -14,9 +15,14 @@
 </template>
 
 <script>
+    import AddTodo from './AddTodo'
     import { mapGetters, mapActions } from 'vuex'
 
     export default {
+        components: {
+            AddTodo
+        },
+
         created () {
             this.fetchTodos()
         },

@@ -14,6 +14,15 @@ const actions = {
             'https://jsonplaceholder.typicode.com/todos'
         )
         commit('setTodos', response.data)
+    },
+
+    async addTodo({ commit }, title) {
+        const response = await axios.post(
+            'https://jsonplaceholder.typicode.com/todos',
+            { title, completed: false }
+        )
+        
+        commit('newTodo', response.data)
     }
 }
 
